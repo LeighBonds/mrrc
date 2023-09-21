@@ -20,10 +20,10 @@ source-code: https://github.com/CollectionBuilder/collectionbuilder-csv
 # title of site appears in banner
 title: The Mary Robinson Research Companion
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: Celebrating All Things Mary
+tagline: 
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "A digital collection of resources to contribute to Mrs. Robinson's recovery and inspire new avenues of research."
+description: "A digital collection of resources to contribute to Mrs. Robinson's recovery and inspire new areas of research."
 # keywords, a short list of subjects describing the collection, separated by semicolon, to appear in rich markup
 keywords: Mary Robinson; Mrs. Robinson; British women writers; Romantic women writers
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
