@@ -1,10 +1,12 @@
 field,display_name,browse_link,external_link,dc_map,schema_map
+MRRC_collection,,,,,,
 title,Title,,,DCTERMS.title,headline
-creator,Creator,,,DCTERMS.creator,creator
+creator,Artist,,,DCTERMS.creator,creator
+after, After,,,,,
 edition,Edition
 signature,Signature
-publisher,Publisher
-date,Publication Year,,,DCTERMS.created,dateCreated
+publisher,Publisher,,,DCTERMS.publisher
+date,Year,,,DCTERMS.date,dateCreated
 publication_month,Publication Month
 publication_format,Publication Format
 price,Price
@@ -18,13 +20,24 @@ internetarchive_link,Internet Archive,,true
 britishlibrary_link,British Library,,true
 estc_link,ESTC,,true
 other_libraries,Other Libraries,,true
-licensed_databases,Licensed Databases
-subject,Subjects,true,,DCTERMS.subject,keywords
-linked_reviews,,,true,,,
-linked_portraits,,,true,,,
+licensed_databases,Licensed Databases,,,,,
+type,Type,,,,,
+technique,Technique,,,,,
+collection,Collection(s),,,,,
+collection_link_1, Collection,,true,,,
+collection_link_2,Collection,,true,,,
+collection_link_3,Collection,,true,,,
+notes,Notes,,,,,
+subject,Subject(s),true,,DCTERMS.subject,keywords
+
+linked_reviews,,,,,,
+linked_portraits,,,,,,
+display_template,,,,,,
+image_small,,,,,,
+image_thumb,,,,,,
 
 location,Location,,,,contentLocation
-latitude,Latitude,,,,
+latitude,Latitude,,,, 
 longitude,Longitude,,,,
 source,Source,,,,
 identifier,Source Identifier,,,,
