@@ -8,7 +8,7 @@ credits: true
 # Look in _includes/feature for options to easily add features to the page
 ---
 
-{% include feature/jumbotron.html objectid="https://cdil.lib.uidaho.edu/images/palouse_sm.jpg" %} 
+{% include feature/jumbotron.html objectid="https://mrrc.leighbonds.org/objects/1785_Vaux-Hall_Rowlandson.jpg" %} 
 
 {% include feature/nav-menu.html sections="About MRRC;MRRC Team;Sources;Tech" %}
 
