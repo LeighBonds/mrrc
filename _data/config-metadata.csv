@@ -12,16 +12,16 @@ advertisements,Advertisements
 puffs,Puffs
 extracts,Extracts
 tributes,Tributes
-worldcat_link, Worldcat,true
-hathitrust_link,Hathitrust,true
-internetarchive_link,Internet Archive,true
-britishlibrary_link,British Library,true
-estc_link,ESTC,true
-other_libraries,Other Libraries,true
+worldcat_link, Worldcat,,true
+hathitrust_link,Hathitrust,,true
+internetarchive_link,Internet Archive,,true
+britishlibrary_link,British Library,,true
+estc_link,ESTC,,true
+other_libraries,Other Libraries,,true
 licensed_databases,Licensed Databases
 subject,Subjects,true,,DCTERMS.subject,keywords
-linked_reviews,,,,
-linked_portraits,,,,
+linked_reviews,,,true,,,
+linked_portraits,,,true,,,
 
 location,Location,,,,contentLocation
 latitude,Latitude,,,,
