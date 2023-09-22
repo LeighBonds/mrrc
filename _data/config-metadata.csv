@@ -7,17 +7,17 @@ publisher,Publisher
 date,Publication Year,,,DCTERMS.created,dateCreated
 publication_month,Publication Month
 publication_format,Publication Format
-price,price
-advertisements,advertisements
+price,Price
+advertisements,Advertisements
 puffs,Puffs
 extracts,Extracts
 tributes,Tributes
-worldcat_link, Worldcat
-hathitrust_link,Hathitrust
-internetarchive_link,Internet Archive
-britishlibrary_link,British Library
-estc_link,ESTC
-other_libraries,Other Libraries
+worldcat_link, Worldcat,true
+hathitrust_link,Hathitrust,true
+internetarchive_link,Internet Archive,true
+britishlibrary_link,British Library,true
+estc_link,ESTC,true
+other_libraries,Other Libraries,true
 licensed_databases,Licensed Databases
 subject,Subjects,true,,DCTERMS.subject,keywords
 linked_reviews,,,,
