@@ -1,7 +1,11 @@
 ---
 # create collection description and stats 
 ---
-{%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
+{% assign metadata = site.metadata | split: ';' %}
+{% for m in metadata %}
+{% assign items = items | concat: site.data[m] %}
+{% endfor %}
+{% assign items = items | where_exp: 'item','item.objectid' %}
 {%- assign raw-dates = items | map: 'date' | compact | uniq -%}
 {%- capture clean-years -%}{% for date in raw-dates %}{% if date contains "-" %}{{ date | strip | split: "-" | first }}{% elsif date contains "/" %}{{ date | strip | split: "/" | last }}{% else %}{{ date | strip }}{% endif %}{% unless forloop.last %};{% endunless %}{%- endfor -%}{%- endcapture -%}
 {%- assign date-range = clean-years | remove: " " | split: ";" | uniq | sort  -%}

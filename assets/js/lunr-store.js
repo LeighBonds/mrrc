@@ -1,7 +1,11 @@
 ---
 # create lunr store for search page
 ---
-{%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
+{% assign metadata = site.metadata | split: ';' %}
+{% for m in metadata %}
+{% assign items = items | concat: site.data[m] %}
+{% endfor %}
+{% assign items = items | where_exp: 'item','item.objectid' %}
 {%- assign fields = site.data.config-search -%}
 var store = [ 
 {%- for item in items -%} 

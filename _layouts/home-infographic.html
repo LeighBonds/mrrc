@@ -2,7 +2,11 @@
 # Default home page with boxes providing collection stats
 layout: page
 ---
-{%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
+{% assign metadata = site.metadata | split: ';' %}
+{% for m in metadata %}
+{% assign items = items | concat: site.data[m] %}
+{% endfor %}
+{% assign items = items | where_exp: 'item','item.objectid' %}
 <div class="row">
   <div class="col-md-8">
 
@@ -21,10 +25,10 @@ layout: page
     {% include index/objects.html %}
 
   </div>
-  <div class="col-md-12">
+  <!--<div class="col-md-12">
 
     {% include index/data-download.html %}
 
-  </div>
+  </div>-->
 
 </div>
